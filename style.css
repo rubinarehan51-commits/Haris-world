@@ -1,70 +1,27 @@
-/* General Reset */
-* {
+body {
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to bottom right, #FFD700, #FF69B4);
+  color: #000;
 }
 
-/* Body Styling */
-body {
-  background: linear-gradient(135deg, #ffe600, #ff6b6b);
-  color: #333;
+header {
   text-align: center;
-  padding: 20px;
+  padding: 50px 20px;
 }
 
-/* Header */
-header h1 {
-  color: #fff;
-  margin-bottom: 10px;
-}
-
-nav a {
+header nav a {
   margin: 0 15px;
   text-decoration: none;
+  color: #000;
   font-weight: bold;
-  color: #fff;
-  transition: color 0.3s;
 }
 
-nav a:hover {
-  color: #ffd700;
-}
-
-/* Main content */
-main p {
-  font-size: 1.2rem;
-  margin: 20px 0;
-  color: #fff;
-}
-
-/* Cards */
-.cards {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-  margin-top: 30px;
-}
-
-.card {
-  background: rgba(255, 255, 255, 0.2);
-  padding: 20px;
-  border-radius: 12px;
-  width: 200px;
-  color: #fff;
-  transition: transform 0.3s, background 0.3s;
-}
-
-.card:hover {
-  transform: translateY(-10px);
-  background: rgba(255, 255, 255, 0.3);
-}
-
-/* Footer */
-footer {
-  margin-top: 50px;
-  color: #fff;
-  font-size: 0.9rem;
+section {
+  text-align: center;
+  padding: 50px 20px;
+  margin: 20px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.3);
 }
