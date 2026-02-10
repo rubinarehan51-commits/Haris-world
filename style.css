@@ -1,56 +1,70 @@
-/* General body styles */
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Body Styling */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background: #f4f4f4;
-    text-align: center;
-    color: #333;
+  background: linear-gradient(135deg, #ffe600, #ff6b6b);
+  color: #333;
+  text-align: center;
+  padding: 20px;
 }
 
 /* Header */
-header {
-    background: #111;
-    color: white;
-    padding: 20px 0;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+header h1 {
+  color: #fff;
+  margin-bottom: 10px;
 }
 
-/* Navigation links */
 nav a {
-    color: white;
-    margin: 0 15px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #fff;
+  transition: color 0.3s;
 }
 
 nav a:hover {
-    color: yellow;
+  color: #ffd700;
 }
 
-/* Paragraphs */
-p {
-    font-size: 18px;
-    margin-top: 30px;
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-    line-height: 1.6;
+/* Main content */
+main p {
+  font-size: 1.2rem;
+  margin: 20px 0;
+  color: #fff;
 }
 
-/* Mobile responsiveness */
-@media screen and (max-width: 600px) {
-    nav a {
-        display: block;
-        margin: 10px 0;
-    }
+/* Cards */
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
 
-    p {
-        font-size: 16px;
-        margin-top: 20px;
-        padding: 0 15px;
-    }
+.card {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  border-radius: 12px;
+  width: 200px;
+  color: #fff;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Footer */
+footer {
+  margin-top: 50px;
+  color: #fff;
+  font-size: 0.9rem;
 }
